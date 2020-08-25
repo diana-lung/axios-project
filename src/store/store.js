@@ -16,7 +16,7 @@ export default new Vuex.Store({
         },
     },
     mutations: {
-        selectMovies: (state) => {
+        renderMovies: (state) => {
             //select all movies
             state.movies = [];
             axios.get('/movies.json')
@@ -28,8 +28,8 @@ export default new Vuex.Store({
         },
     },
     actions: {
-        selectMovies: ({commit}) => {
-            commit('selectMovies');
+        renderMovies: ({commit}) => {
+            commit('renderMovies');
         },
     },
 });

@@ -56,11 +56,11 @@ export default {
      },
     methods: {
         ...mapActions([
-            'selectMovies'
+            'renderMovies'
         ]),
         showMovies() {
             this.movieTitleSearchString = '';
-            this.selectMovies();
+            this.renderMovies();
         },
     },
 }

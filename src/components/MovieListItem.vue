@@ -1,9 +1,9 @@
 <template>
     <div class='movie-item'>
-        <p><span class="enhanced-text">Title:</span> {{ title }}</p>
-        <p><span class="enhanced-text">Genre:</span> {{ genre }}</p> 
-        <p><span class="enhanced-text">Year:</span> {{ year }}</p>
-        <p><span class="enhanced-text">Description:</span><br>{{ description }}</p>
+        <p><span class="enhanced-text">Title:</span> {{ movie.title }}</p>
+        <p><span class="enhanced-text">Genre:</span> {{ movie.genre }}</p> 
+        <p><span class="enhanced-text">Year:</span> {{ movie.year }}</p>
+        <p><span class="enhanced-text">Description:</span><br>{{ movie.description }}</p>
     </div>
 </template>
 
@@ -13,14 +13,6 @@ export default {
     props: {
         movie: Object,
     },
-    data() {
-        return {
-            title: this.movie.title,
-            genre: this.movie.genre,
-            year: this.movie.year,
-            description: this.movie.description,
-        }
-    }
 }
 </script>
 
